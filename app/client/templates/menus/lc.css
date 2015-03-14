@@ -39,8 +39,12 @@ html, body {
   font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;        /* <-- reset the font property */
 }
 
+.no-espacio{
+   height: 35%;
+}
 
-.text-img-center p{
+
+.text-img-center {
     left: 0;
     position:absolute;
     top: 40%;
@@ -54,5 +58,9 @@ html, body {
     position:relative;
     text-align:center;
 
+}
+
+.active{
+  width:10%;
 }
 

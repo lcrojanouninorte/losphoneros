@@ -25,8 +25,13 @@ Router.route('Inicio',{
 Router.route('/Portada', function(){
   this.render('Portada');
 });
+
 Router.route('/Challenge', function(){
   this.render('Challenge');
+});
+
+Router.route('/Challenge2', function(){
+  this.render('Challenge2');
 });
 
 Router.route('/Start', function(){

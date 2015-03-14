@@ -3,6 +3,8 @@
 }
 
 .hi2_estilo{
+  position: relative;
+  top: 50px;
   color: #6a1b9a;
 }
 .btn-violet-bg{
@@ -20,12 +22,22 @@
 	content:url("/images/icono.png") -130px -140px no-repeat;
 }
 .btn-create-account-bg{
-	content:url("/images/create_account.gif");
+	content:url("/images/ca.gif");
   width: 200px;
   height: auto;
 }
 .btn-signin-bg{
 	content:url("/images/sign_in1.png");
-  width: 200px;
+  width: 185px;
+  height: auto;
+}
+.btn-fiends-bg{
+	content:url("/images/friends.gif");
+  width: 250px;
+  height: auto;
+}
+.btn-random-bg{
+	content:url("/images/random.gif");
+  width: 250px;
   height: auto;
 }
