@@ -6,8 +6,6 @@
 	content:url("/images/btn-red.png");
 }
 
-
-
 html, body {
   height: 100%;
 }
@@ -60,7 +58,12 @@ html, body {
 
 }
 
-.active{
-  width:10%;
+.press{
+ -moz-border-radius-bottomright: 26px;
+-webkit-border-bottom-right-radius: 26px;
+border-bottom-right-radius: 26px;
+-moz-border-radius-bottomleft: 36px;
+-webkit-border-bottom-left-radius: 36px;
+border-bottom-left-radius: 36px;
 }
 

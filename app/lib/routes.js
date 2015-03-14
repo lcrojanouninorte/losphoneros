@@ -7,8 +7,12 @@ Router.configure({
 Router.route('/', {
   layoutTemplate: 'MasterLayout',
   name: 'home',
-  controller: 'HomeController',
-  action: 'action',
+   action:  
+   function(){
+     this.render('Start');
+   },
+ 
+ 
   where: 'client'
 });
 
@@ -38,7 +42,9 @@ Router.route('/Start', function(){
   this.render('Start');
 });
 
-
+Router.route('/learning', function(){
+  this.render('learning');
+});
 
 Router.route('/example', {
   name: 'example',

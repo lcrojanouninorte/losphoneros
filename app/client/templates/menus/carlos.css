@@ -3,10 +3,21 @@
 }
 
 .hi2_estilo{
+  color: #6a1b9a;
+}
+
+.hi3_estilo{
   position: relative;
   top: 50px;
   color: #6a1b9a;
 }
+
+.hi4_estilo{
+  position: relative;
+  top: 10px;
+  color: #6a1b9a;
+}
+
 .btn-violet-bg{
 	content:url("/images/challenge.gif") ;
   width: 300px;
@@ -40,4 +51,20 @@
 	content:url("/images/random.gif");
   width: 250px;
   height: auto;
+}
+.btn-lvl1-bg{
+	content:url("/images/btn1_1.png") -130px -50px no-repeat;
+}
+.btn-lvl-bg{
+	content:url("/images/btn.png") -130px -50px no-repeat;
+}
+
+.btn-lvl10-bg{
+	content:url("/images/btn10_1.png") -130px -50px no-repeat;
+}
+.unir{
+  padding-left: 10% !important;
+}
+.unir2{
+  padding-right: 10% !important;
 }
