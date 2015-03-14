@@ -1,0 +1,31 @@
+.hi_estilo{
+  color: #6a1b9a;
+}
+
+.hi2_estilo{
+  color: #6a1b9a;
+}
+.btn-violet-bg{
+	content:url("/images/challenge.gif") ;
+  width: 300px;
+  height: auto;
+  
+}
+.btn-pink-bg{
+	content:url("/images/lm.gif");
+  width: 300px;
+  height: auto;
+}
+.btn-icono-bg{
+	content:url("/images/icono.png") -130px -140px no-repeat;
+}
+.btn-create-account-bg{
+	content:url("/images/create_account.gif");
+  width: 200px;
+  height: auto;
+}
+.btn-signin-bg{
+	content:url("/images/sign_in1.png");
+  width: 200px;
+  height: auto;
+}

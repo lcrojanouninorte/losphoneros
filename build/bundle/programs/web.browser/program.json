@@ -1,0 +1,40 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "5c26699adbc196a18478ff74ef209adab4ae26d7.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/5c26699adbc196a18478ff74ef209adab4ae26d7.js",
+      "size": 379420,
+      "hash": "5c26699adbc196a18478ff74ef209adab4ae26d7"
+    },
+    {
+      "path": "71853c6197a6a7f222db0f1978c7cb232b87c5ee.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/71853c6197a6a7f222db0f1978c7cb232b87c5ee.css",
+      "sourceMap": "71853c6197a6a7f222db0f1978c7cb232b87c5ee.css.map",
+      "sourceMapUrl": "/71853c6197a6a7f222db0f1978c7cb232b87c5ee.map",
+      "size": 2,
+      "hash": "71853c6197a6a7f222db0f1978c7cb232b87c5ee"
+    },
+    {
+      "path": "app/.gitkeep",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/.gitkeep",
+      "size": 1,
+      "hash": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "4569886a6142ec87b167954e55388b01dae48eea"
+    }
+  ]
+}

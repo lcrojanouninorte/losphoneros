@@ -1,0 +1,58 @@
+.esta_fila{
+  background-color: green;
+}
+
+.btn-red-bg{
+	content:url("/images/btn-red.png");
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+.container-align{
+  height: 14rem;
+}
+
+.vertical-center {
+    background-color: transparent;
+  height:100%;
+  width:100%;
+
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 70%;
+}
+
+.vertical-center > .container-align {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;        /* <-- reset the font property */
+}
+
+
+.text-img-center p{
+    left: 0;
+    position:absolute;
+    top: 40%;
+    width: 100%;  
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+
+.image-wrapper {
+    position:relative;
+    text-align:center;
+
+}
+
