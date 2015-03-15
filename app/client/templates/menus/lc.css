@@ -15,7 +15,7 @@ html, body {
 }
 
 .vertical-center {
-    background-color: transparent;
+  background-color: transparent;
   height:100%;
   width:100%;
 
@@ -28,6 +28,7 @@ html, body {
   display: inline-block;
   vertical-align: middle;  /* vertical alignment of the inline element */
   height: 70%;
+
 }
 
 .vertical-center > .container-align {
@@ -37,10 +38,23 @@ html, body {
   font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;        /* <-- reset the font property */
 }
 
+.mtop {
+  margin-top: 2%;
+}
 .no-espacio{
    height: 35%;
+   margin-top: -5%;
+}
+.no-espacio .row{
+   margin-bottom: -20%;
 }
 
+.espacio .row .col{
+   margin-top: 5%;
+}
+.espacio .row {
+   
+}
 
 .text-img-center {
     left: 0;
@@ -55,15 +69,83 @@ html, body {
 .image-wrapper {
     position:relative;
     text-align:center;
+  overflow:hidden;
 
 }
 
 .press{
- -moz-border-radius-bottomright: 26px;
--webkit-border-bottom-right-radius: 26px;
-border-bottom-right-radius: 26px;
--moz-border-radius-bottomleft: 36px;
--webkit-border-bottom-left-radius: 36px;
-border-bottom-left-radius: 36px;
+   -moz-border-radius-bottomright: 26px;
+  -webkit-border-bottom-right-radius: 26px;
+  border-bottom-right-radius: 32px;
+  -moz-border-radius-bottomleft: 36px;
+  -webkit-border-bottom-left-radius: 36px;
+  border-bottom-left-radius: 32px;
+  position: relative;
+  top: 14px;
+  /* height: 99px!important; */
+  /* overflow: hidden; */
+  /* margin-bottom: -7%; */
+}
+.press-text {
+  top: 29%!important;
 }
 
+
+.image-btn { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+ 
+}
+.box{  
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+     
+  }
+  @keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+.pulse {
+   animation-name: pulse;
+   -moz-animation-name: pulse;
+   -webkit-animation-name: pulse;
+   animation-duration: 4s;
+    -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+}
+
+
+.image-btn p { 
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+    font-family: Montserrat, sans-serif;
+  font-size: 2em;
+  color: white;
+}
+}
+
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 4s;
+}
+
+.row .col .s12 {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 15%;
+}
+
+#logo {
+  width: 20%;
+  min-width: 150px;
+}

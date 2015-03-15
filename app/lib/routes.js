@@ -5,7 +5,7 @@ Router.configure({
 });
 
 Router.route('/', {
-  layoutTemplate: 'MasterLayout',
+  layoutTemplate: 'Footer_Layout',
   name: 'home',
    action:  
    function(){

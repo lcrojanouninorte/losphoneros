@@ -1,17 +1,23 @@
-Template.Challenge.rendered = function () {
+Template.Challenge.rendered = function() {
 
 };
 Template.Challenge.events({
-    "click .tg-btn":function(event,template){
-      $(event.target).toggle(
-        function () { $(vent.target).addClass("press");
-      }, 
-        function () {
-          $(event.target).removeClass("press");
-        });
-  }
+	"click .image-btn": function(event, template) {
+			$(".image-btn").addClass("press");
+			$(".image-btn div p").removeClass("press");
+		setTimeout(function() {
+			Router.go('Challenge2');
+		}, 1000);
+
+	},
+	"click .image-btn div p": function(event, template) {
+		$(".image-btn").addClass('press');
+		$(".image-btn div p").removeClass( "press" )
+
+		setTimeout(function() {
+		Router.go('Challenge2');
+	}, 1000);
+
+}
 });
-
-
-  
 
