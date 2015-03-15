@@ -10,3 +10,7 @@ insecure
 iron:router
 natestrauser:animate-css
 materialize:materialize
+useraccounts:materialize
+accounts-password
+accounts-facebook
+accounts-google

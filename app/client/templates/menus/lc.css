@@ -91,11 +91,7 @@ html, body {
 }
 
 
-.image-btn { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
- 
-}
+
 .box{  
   animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
@@ -116,7 +112,11 @@ html, body {
   -webkit-animation-duration: 4s;
 }
 
-
+.image-btn { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+ 
+}
 .image-btn p { 
   position: absolute;
   top: 5%;
@@ -125,13 +125,12 @@ html, body {
     font-family: Montserrat, sans-serif;
   font-size: 2em;
   color: white;
-
 }
+
 .logo-large {
   width: 20%!important;
   min-width: 200px;
   display: inline-block;
-  
 }
 
 @keyframes pulse {

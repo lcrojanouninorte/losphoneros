@@ -1,0 +1,16 @@
+<template name="MasterLayoutVioletBoard">
+  
+	<header>
+  {{> NavViolet}}
+  </header>
+
+  <div class="animated flipInY">
+  <div class="board-container">
+  <main>
+  	
+  {{> yield}}
+    </main>
+    </div>
+  {{> Footer}}
+  </div>
+</template>

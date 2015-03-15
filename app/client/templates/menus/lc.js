@@ -1,6 +1,18 @@
 Template.Challenge.rendered = function() {
+};
+
+Template.Start.rendered = function(){
+  $('#modal8').openModal({
+    });
+setTimeout(function(){
+    $('#modal8').closeModal();
+}, 10000000);
+};
 
 
+
+Template.lvl1_adjetivos.rendered = function() {
+  $('.modal-trigger').leanModal();
 };
 Template.Challenge.events({
 	"click #btn-multi": function(event, template) {
@@ -8,7 +20,7 @@ Template.Challenge.events({
 			$("#btn-multi div p").removeClass("press");
 		setTimeout(function() {
 			Router.go('Challenge2');
-		}, 100);
+		}, 1000);
 
 	},
 	"click #btn-multi div p": function(event, template) {
@@ -17,7 +29,7 @@ Template.Challenge.events({
 
 		setTimeout(function() {
 		Router.go('Challenge2');
-	}, 100);
+	}, 1000);
 
 },
 	"click #btn-single div p": function(event, template) {
@@ -26,7 +38,7 @@ Template.Challenge.events({
 
 		setTimeout(function() {
 		Router.go('GameSingle');
-	}, 100);
+	}, 1000);
 
 },
 	"click #btn-sinlge": function(event, template) {
@@ -34,7 +46,7 @@ Template.Challenge.events({
 			$("#btn-single div p").removeClass("press");
 		setTimeout(function() {
 			Router.go('GameSingle');
-		}, 100);
+		}, 1000);
 
 	},
 });

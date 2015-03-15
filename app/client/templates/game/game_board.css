@@ -1,0 +1,43 @@
+.board-container {
+  background-image: url('/images/bg_2d.jpg');
+  background-position:contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+}
+
+.star-icon{
+    width: 10%;
+  min-width: 46px;
+  margin: 2%;
+}
+
+.reloj-icon{
+  width: 10%;
+  min-width: 40px;
+  margin: 0%;
+}
+
+.board-header{
+  margin-bottom:-20px;
+  padding-top: 1%;
+}
+.board-header .row{
+  margin-bottom:-20px;
+  margin-top: 18px;
+  
+}
+.board-header p{
+  font-family: 'Luckiest Guy', cursive!important;
+  color: white;
+    
+ 
+}
+
+.btn-resp{
+    width: 70%;
+  min-width: 150px;
+  max-width: 100%;
+  margin-left: -20px
+}

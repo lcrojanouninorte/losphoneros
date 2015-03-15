@@ -1,14 +1,103 @@
 <template name="GameSingle">
-	<div class="row">
-		<div class="col s4 m4">
-			<p>1/15</p>
-		</div>
-		<div class="col s4 m4">
-			<p>star - points</p>
-		</div>
-		<div class="col s4 m4">
-			<p>timer time</p>
-		</div>
-
+ 
+	<div class="board-header row blue lighten-4 ">
+    <div class="col s2 m2 offset-s1 ">
+      <p>{{questionsCount}}/15</p>
+    </div>
+    
+    <div class="col s2 m2 right-align ">
+        <img src="/images/estrella.png" class="star-icon responsive-img">
+    </div>
+    
+    <div class="col s2 m2 left-align"> 
+        <p>{{points}}</p>
+    </div>
+    
+    <div class="col s2 m2 right-align">
+      <img src="/images/RELOJ.png" class="reloj-icon star-icon responsive-img">
+    </div>
+    
+    <div class="timer col s2 m2 left-align">
+      <p>Time: {{time}}</p>
+    </div>    
+   
 	</div>
+   
+ 
+	<section id="board">
+		<div class="row">
+        <div class="center-align">
+          {{> qImage }}
+        </div>
+		</div>
+  </section>
+  
+  <section>
+    <div class="row ans-btns" >
+      <div class="col s5 m4 offset-s1 offset-m2 ">
+        <a class="btn-resp waves-effect waves-light btn-large red"><i class="mdi-file-cloud right"></i>{{ans1}}</a>
+      </div>
+      
+      <div class="col s5 m4 offset-s1 offset-m2">
+        <a class="btn-resp waves-effect waves-light btn-large blue"><i class="mdi-file-cloud right"></i>{{ans2}}</a>
+      </div>
+      
+      <div class=" col s5 m4 offset-s1 offset-m2">
+        <a class="btn-resp waves-effect waves-light btn-large green"><i class="mdi-file-cloud right"></i>{{ans3}}</a>
+      </div>
+      
+      <div class="col s5 m4 offset-s1 offset-m2">
+        <a class="btn-resp waves-effect waves-light btn-large yellow"><i class="mdi-file-cloud right"></i>{{ans4}}</a>
+      </div>
+      
+    </div>
+  
+  </section>
+      
+    
+   
+</template>
+
+<template name="qImage">
+  <div class="row">
+    
+    <div class="col s12">
+      <h3>Answer the Question!</h3>
+    </div>
+          <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="/images/{{img}}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                {{question}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+  </div>
+</template>
+<template name="qFill">
+  <div class="row">
+    <div class="col s12">
+      
+    </div>
+  </div>
+</template>
+<template name="qText">
+    <div class="row">
+    <div class="col s12">
+      
+    </div>
+  </div>
+</template>
+
+
+<template name="ImageCard">
+
 </template>

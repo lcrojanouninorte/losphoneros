@@ -1,4 +1,13 @@
 <template name="Start" >
+<a href="#modal8"></a>
+<div id="modal8" class="y vertical-center modal">
+      <img class="responsive-img btn-splash-bg" />
+  <audio class="audioDemo" autoplay="autoplay" style="display:none;"> 
+   <source src="audio/a.mp3" type="audio/mpeg">
+   <source src="audio/music.ogg" type="audio/ogg">
+</audio>
+  </div>
+  
 <div class="mtop animated infinite fadeInDownBig">
   <div class="row">
     <div  class="col s12 center-align">
@@ -8,26 +17,22 @@
     </div>
   </div>
   <div class="vertical-center no-espacio">
-    <div class="container-align">
-    <div class="row">
-      <div class="center-align">
-        <div class="center-align col s12 grid-example hi_estilo">
-          <span class="flow-text"><p>WELCOME¡</p></span>
-        </div>
-        <div class="center-align col s12 grid-example hi2_estilo">
-          <span class="flow-text">Let’s improve you english vocabulary!</span>
-        </div>
-      </div>
-    </div>
+    <div class="container-align">  
       <div class="row">
         <div class="col s12 center-align">
           <div  class="waves-effect waves-light">
-            <img class="responsive-img btn-create-account-bg" />
+            <a href="{{ pathFor 'signup' }}"><img class="responsive-img btn-create-account-bg" /></a>
           </div>
         </div>
         <div class="col s12 center-align">
           <div class="waves-effect waves-light">
+           {{#if currentUser}}
             <a href="{{ pathFor 'Inicio' }}"><img class="responsive-img btn-signin-bg" /></a>
+           {{else}}
+            <a href="{{ pathFor 'Login' }}"><img class="responsive-img btn-signin-bg" /></a>
+
+
+           {{/if}}
           </div>
         </div>
       </div>
