@@ -1,0 +1,18 @@
+.violet{
+	  background-color: rgb(123, 29, 161);
+	  font-family: 'Changa One', cursive;
+	  font-size: 2em!important;
+}
+.violet a{
+	font-size: 2em;
+
+}
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

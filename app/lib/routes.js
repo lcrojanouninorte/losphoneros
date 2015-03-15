@@ -18,6 +18,7 @@ Router.route('/', {
 
 Router.route('Inicio',{
  path: '/Inicio',
+
  layoutTemplate:'Nonav_Layout',
  action:  
    function(){
@@ -30,12 +31,36 @@ Router.route('/Portada', function(){
   this.render('Portada');
 });
 
-Router.route('/Challenge', function(){
-  this.render('Challenge');
-});
 
-Router.route('/Challenge2', function(){
-  this.render('Challenge2');
+Router.route('Challenge',{
+ path: '/Challenge',
+ data: {title:"Challenge!"},
+ layoutTemplate:'MasterLayoutViolet',
+ action:  
+   function(){
+     this.render('Challenge');
+   }
+ 
+});
+Router.route('Challenge2',{
+ path: '/Challenge2',
+ data: {title:"Challenge!"},
+ layoutTemplate:'MasterLayoutViolet',
+ action:  
+   function(){
+     this.render('Challenge2');
+   }
+ 
+});
+Router.route('GameSingle',{
+ path: '/GameSingle',
+ data: {title:"Challenge!"},
+ layoutTemplate:'Nonav_Layout',
+ action:  
+   function(){
+     this.render('GameSingle');
+   }
+ 
 });
 
 Router.route('/Start', function(){
